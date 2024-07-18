@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Front-end Developer Test Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="assets/arrow.svg" alt="two arrow to right" class="arrowIcon">
+      <a href="#" class="active">
+        <img src="assets/book.svg" alt="book" class="bookIcon">
+        <span>Main</span>
+      </a>
+      <span>/</span>
+      <a href="#">Getting started</a>
+      <span>/</span>
+      <a href="#">Front-end developer test project</a>
+    </nav>
+    <nav>
+      <div class="editingSection">
+        <img src="assets/unlock.svg" alt="unlock" class="unlockIcon">
+        <span>Editing</span>
+      </div>   
+      <div class="publishSpace">      
+        <span>Publish Space</span>
+        <img src="assets/arrowDown.svg" alt="arrowDown" class="arrowDownIcon">
+      </div>  
+    </nav>
+  </header>
+
+  <section>
+    <div class="info-bar">
+      <span class="status">P</span>
+      <span>|</span>
+      <span class="time">
+        <img src="assets/clock.svg" alt="clock" class="clockIcon">
+        0min
+      </span>
+      <span>|</span>
+      <span class="rabbit">
+        <img src="assets/rabbit.svg" alt="rabbit" class="rabbitIcon">
+      </span>
+      <span>|</span>
+      <span class="numbers">
+        <img src="assets/arrowleftdown.svg" alt="arrowleftdown" class="arrowleftdownIcon">
+        0
+      </span>
+      <div class="left-content">
+        <img src="assets/check.svg" alt="check" class="checkIcon">
+        <img src="assets/cloud.svg" alt="cloud" class="cloudIcon">
+        <img src="assets/dots.svg" alt="dots" class="dotsIcon">
+      </div>
+    </div>
+    <div class="container">
+        <h1>Front-end developer test project</h1>
+        <p>Your goal is to make a page that looks exactly like this one, and has the ability to create H1 text simply by typing / then 1, then typing text, and hitting enter.</p>
+        <div id="contentArea"></div>
+        <div class="inputArea">
+        <input type="text" id="commandInput" placeholder="Type / for blocks, @ to link docs or people" autofocus>
+          <div id="modal" class="hidden">
+            <div class="modal-content">
+              <h2>Add blocks</h2>
+              <p>Keep typing to filter, or escape to exit</p>
+              <p class="filtering">Filtering keyword <span>1</span></p>
+            </div>
+            <ul>
+                <li data-command="h1">
+                  <img src="assets/text.svg" alt="text" class="textIcon">
+                  <div>
+                    <span>Heading 1</span> </br> Shortcut: type / + space
+                  </div>
+                </li>
+                <li data-command="h1-expandable">
+                  <img src="assets/text.svg" alt="text" class="textIcon">
+                  <div>
+                    <span>Expandable Heading 1</span> </br> Shortcut: type /# + space
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
