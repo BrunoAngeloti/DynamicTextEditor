@@ -20,10 +20,12 @@ To install this project, follow the instructions below:
 
 1. Clone the repository to your local machine using:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone git@github.com:BrunoAngeloti/DynamicTextEditor.git
    ```
 
 2. Open the index.html file in your preferred browser.
+
+3. If you prefer, you can access the application directly by visiting this link: https://brunoangeloti.github.io/DynamicTextEditor/
 
 
 ## Usage
